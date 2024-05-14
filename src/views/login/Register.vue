@@ -1,30 +1,16 @@
 <script>
-
 export default {
-  data() {
-    return {
-      loginObj:{
-        email:"",
-        password:""
-      }
-    }
-  },
-  computed: {
-   
-  },
+    
 }
-
 </script>
 
 <template>
-  <head>
+    <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-  <main>
-    <p class="loginPageText">管理者登入</p>
-    <!--i標籤從fontawesome-->
+    </head>
+    <p class="loginPageText">管理者註冊</p>
     <form action="" class="dataForm">
       <label for="" class="emailTitle">Email：</label>
         <div class="emailInputArea">
@@ -36,17 +22,16 @@ export default {
             <input type="password" class="passwordInput" placeholder="Sujit Sen" style="width: 250px;">
         </div>
         <div class="selectPart">
-          <button type="submit" class="logInBotton">登入</button>
+            <a href="/" class="signUpButton">返回登入</a>
           <p>　　　　　　　　</p>
-          <a href="/Register" class="signUpButton">註冊</a>
+          <a href="/" class="signUpButton">送出申請</a>
         </div>
     </form>
-  </main>
 </template>
 
 <style lang="scss" scoped>
-
-$button-width: 120px;
+    
+    $button-width: 120px;
 $button-height: 40px;
 * {
     box-sizing: border-box;

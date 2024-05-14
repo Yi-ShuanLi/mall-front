@@ -8,7 +8,13 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    }
+    },
+    {
+      path:'/Register',
+      name:'DynamicRouId',
+      props:true,
+      component:()=>import('../views/login/Register.vue')
+    },
   ]
 })
 
